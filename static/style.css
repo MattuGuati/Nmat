@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#network-status,
+#port-status {
+    margin: 20px 0;
+}
+
+.dash-table-container {
+    margin: 20px 0;
+}
+
+.alert-container {
+    margin: 20px 0;
+    color: red;
+    font-weight: bold;
+    white-space: pre-line; /* Para mostrar cada alerta en una nueva línea */
+}
+
+.loader {
+    width: 5.4em;
+    height: 5.4em;
+    border: 0.4em solid rgb(84, 84, 84);
+    border-left-color: #a23ffc;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: 0 auto;
+    display: none; /* Ocultar por defecto */
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

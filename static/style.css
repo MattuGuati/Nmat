@@ -1,26 +1,62 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-h1, h2 {
+/* Título principal */
+.main-title {
+    color: #2c3e50;
     text-align: center;
+    margin-top: 20px;
 }
 
-.container {
-    max-width: 800px;
+/* Subtítulo */
+.sub-title {
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Botón de escaneo */
+.btn-primary {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Contenedor de alertas */
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    margin-bottom: 20px;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de tablas */
+.dash-table-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Estilos para DataTable */
+.dash-table-container .dash-table {
+    width: 100%;
+}
+
+/* Loader */
 .loader {
-    width: 5.4em;
-    height: 5.4em;
-    border: 0.4em solid rgb(84, 84, 84);
-    border-left-color: #a23ffc;
-    border-radius: 45%;
-    animation: spin 0.7s linear infinite;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

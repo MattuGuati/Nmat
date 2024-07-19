@@ -1,10 +1,12 @@
 import smtplib
 from email.mime.text import MIMEText
 
-def enviar_alerta(mensaje):
+def enviar_alerta(alertas):
     remitente = "apismatteo@gmail.com"
     destinatario = "apismatteo@gmail.com"
     asunto = "Alerta de Cambio en Estado de IPs y Puertos"
+
+    mensaje = "\n".join(alertas)
 
     msg = MIMEText(mensaje)
     msg['Subject'] = asunto
